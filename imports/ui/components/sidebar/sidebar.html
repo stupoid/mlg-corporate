@@ -1,0 +1,9 @@
+<template name="sidebar">
+  <div class="list-group">
+    {{#if isInRole 'super-admin'}}
+      <a href="{{pathFor route='adminCompanies'}}" class="list-group-item {{isActiveRoute 'adminCompanies'}}">Companies</a>
+    {{/if}}
+    <!-- <a href="{{pathFor route='appHome'}}" class="list-group-item {{isActiveRoute 'appHome'}}">Calendar</a> -->
+    <!-- <a href="{{pathFor route='tickets'}}" class="list-group-item {{isActiveRoute 'tickets'}}">Tickets</a> -->
+  </div>
+</template>
